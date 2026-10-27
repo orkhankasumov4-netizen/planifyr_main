@@ -78,12 +78,14 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
 .empty-state{text-align:center;padding:44px 22px;background:var(--surface);border:1px dashed var(--line);border-radius:20px}.empty-state h4{font-size:18px;font-weight:600;margin:15px 0 7px}.empty-state p{font-size:13px;color:var(--muted);max-width:310px;margin:0 auto 20px}.empty-icon{width:54px;height:54px;margin:auto;border-radius:18px;display:grid;place-items:center;background:var(--soft);color:var(--accent)}.primary-button{background:#5750ce;color:white;padding:11px 18px;border-radius:12px;font-size:13px;font-weight:600}.subtle-button{color:var(--accent);padding:8px}.agenda-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.agenda-heading h4{font-weight:600}.day-agenda{max-width:760px;margin:auto;display:grid;gap:10px}#mini-calendar-grid button{width:100%;height:40px;min-height:40px}#calendar-container [role=button]{min-width:0}#calendar-container [role=button]:focus-visible{outline-offset:0!important}
 #task-modal-content,#day-modal>div{background:var(--surface);padding:26px;max-height:calc(100dvh - 40px);overscroll-behavior:contain}#day-modal-tasks-list{max-height:55dvh}.pb-safe{padding-bottom:max(12px,env(safe-area-inset-bottom))}#task-modal label{font-size:11px;color:var(--muted)}#task-modal input,#task-modal textarea,#task-modal select{font-size:16px}#task-form>div:last-child{position:sticky;bottom:-26px;background:var(--surface);padding-bottom:20px;margin-bottom:-20px}#form-error{padding:12px;background:#fce9ec;color:#8e2340;border-radius:10px;font-size:13px}#storage-warning{padding:14px 24px;background:#fff1d6;color:#754d0e;font-size:14px}#toast-container{z-index:100;max-width:calc(100vw - 32px)}.undo-toast{pointer-events:auto;background:var(--ink);color:var(--surface);padding:12px 16px;border-radius:14px;box-shadow:0 4px 20px #0002;font-size:13px}.undo-toast button{padding:0 10px;text-decoration:underline;font-weight:600}.backup-tools{padding:12px 32px 24px;display:flex;justify-content:space-between;gap:10px;align-items:center;color:var(--muted);font-size:11px}.backup-tools button{padding:8px 12px;text-decoration:underline}.skip-link{position:fixed;top:-100px;left:16px;z-index:200;background:var(--surface);padding:12px}.skip-link:focus{top:12px}
 @media(min-width:1024px){#view-dashboard>.grid{grid-template-columns:minmax(0,1fr) 280px;gap:26px}#view-dashboard>.grid>div:first-child{grid-column:auto}#view-dashboard>.grid>div:first-child>div:first-child{flex-wrap:wrap}#view-dashboard>.grid>div:first-child>div:first-child>div{flex-wrap:wrap}#view-dashboard{max-width:1130px;margin:auto}#view-calendar,#view-analytics{max-width:1130px;margin:auto}}
-@media(max-width:1023px){body{padding-bottom:calc(80px + env(safe-area-inset-bottom))!important}body>nav{background:var(--surface)!important;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 24px #252b4606}body>nav>div{height:74px;gap:4px;padding:0 16px}body>nav button{flex:1;min-width:0}body>nav button[aria-label="Add Task"]{flex:0 0 48px;margin:0 12px;border-radius:16px;order:4}body>nav button span{font-size:11px}body>nav button[aria-current=page]{color:var(--accent)}main>header{padding:16px 20px}main>div.max-w-7xl{padding:20px}#view-dashboard>div:first-child{min-height:0}#view-dashboard>.grid>div:last-child{display:grid;grid-template-columns:1fr 1fr;gap:16px}#view-dashboard>.grid>div:last-child>div{margin:0}#toast-container{top:14px;right:16px}#weekly-chart{height:210px}}
-@media(max-width:639px){main>header{position:relative!important;padding:20px 18px 16px;gap:16px}#header-title{font-size:24px}main>div.max-w-7xl{padding:18px 14px}#view-dashboard>div:first-child{padding:22px;gap:20px;border-radius:22px}#dashboard-greeting{font-size:24px}#view-dashboard>div:first-child>div:last-child{padding:12px 16px;border-radius:14px}#view-dashboard>div:first-child>div:last-child>div:last-child{width:36px;height:36px}.daily-summary{font-size:12px;padding-top:10px}#dash-progress-percent{font-size:26px}#view-dashboard>.grid{gap:24px}#view-dashboard>.grid>div:last-child{display:flex;flex-direction:column-reverse;gap:16px}#task-list-heading{font-size:18px}#task-filter,#priority-filter{font-size:12px;width:50%;padding-left:10px;padding-right:4px}#task-modal-content,#day-modal>div{padding:20px 18px max(24px,env(safe-area-inset-bottom));max-height:92dvh;border-radius:24px 24px 0 0}#task-form>.grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#task-form>div:last-child{bottom:-24px}#task-modal button[aria-label=Close],#day-modal button[aria-label=Close]{min-width:44px;min-height:44px}#task-modal h3,#day-modal h3{font-size:18px}.task-card{padding:12px 6px;gap:3px}.task-title{font-size:14px}.task-description{font-size:12px}.task-meta{gap:6px}#day-modal .task-delete{min-width:36px;width:36px}#mini-calendar-grid button{height:44px}#calendar-container{padding:12px 8px}#calendar-container .h-20{height:80px}#calendar-container [role=button]{padding:5px 3px}#calendar-container [role=button]>div:last-child{pointer-events:none}#calendar-container [role=button] .text-\[9px\]{font-size:10px}#view-calendar>div:first-child{padding:14px;gap:12px}#view-calendar>div:first-child>div:first-child{gap:14px}#view-analytics>div:first-child{gap:10px;grid-template-columns:repeat(3,minmax(0,1fr))}#view-analytics>div:first-child>div{padding:14px 10px}#view-analytics>div:first-child p{font-size:10px;letter-spacing:0}#view-analytics>div:first-child h3{font-size:26px}#view-analytics>div:last-child>div:first-child{flex-wrap:wrap;gap:8px}.backup-tools{padding:12px 14px 20px;flex-direction:column;gap:0}.empty-state{padding:32px 16px}}
+@media(max-width:1023px){body{padding-bottom:calc(80px + env(safe-area-inset-bottom))!important}body>nav{background:var(--surface)!important;padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -4px 24px #252b4606}body>nav>div{height:74px;gap:4px;padding:0 16px}body>nav button{flex:1;min-width:0}body>nav button[onclick="openTaskModal()"]{flex:0 0 48px;margin:0 12px;border-radius:16px;order:4}body>nav button span{font-size:11px}body>nav button[aria-current=page]{color:var(--accent)}main>header{padding:16px 20px}main>div.max-w-7xl{padding:20px}#view-dashboard>div:first-child{min-height:0}#view-dashboard>.grid>div:last-child{display:grid;grid-template-columns:1fr 1fr;gap:16px}#view-dashboard>.grid>div:last-child>div{margin:0}#toast-container{top:14px;right:16px}#weekly-chart{height:210px}}
+@media(max-width:639px){main>header{position:relative!important;padding:20px 18px 16px;gap:16px}#header-title{font-size:24px}main>div.max-w-7xl{padding:18px 14px}#view-dashboard>div:first-child{padding:22px;gap:20px;border-radius:22px}#dashboard-greeting{font-size:24px}#view-dashboard>div:first-child>div:last-child{padding:12px 16px;border-radius:14px}#view-dashboard>div:first-child>div:last-child>div:last-child{width:36px;height:36px}.daily-summary{font-size:12px;padding-top:10px}#dash-progress-percent{font-size:26px}#view-dashboard>.grid{gap:24px}#view-dashboard>.grid>div:last-child{display:flex;flex-direction:column-reverse;gap:16px}#task-list-heading{font-size:18px}#task-filter,#priority-filter{font-size:12px;width:50%;padding-left:10px;padding-right:4px}#task-modal-content,#day-modal>div{padding:20px 18px max(24px,env(safe-area-inset-bottom));max-height:92dvh;border-radius:24px 24px 0 0}#task-form>.grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}#task-form>div:last-child{bottom:-24px}#task-modal button[onclick^="close"],#day-modal button[onclick^="close"]{min-width:44px;min-height:44px}#task-modal h3,#day-modal h3{font-size:18px}.task-card{padding:12px 6px;gap:3px}.task-title{font-size:14px}.task-description{font-size:12px}.task-meta{gap:6px}#day-modal .task-delete{min-width:36px;width:36px}#mini-calendar-grid button{height:44px}#calendar-container{padding:12px 8px}#calendar-container .h-20{height:80px}#calendar-container [role=button]{padding:5px 3px}#calendar-container [role=button]>div:last-child{pointer-events:none}#calendar-container [role=button] .text-\[9px\]{font-size:10px}#view-calendar>div:first-child{padding:14px;gap:12px}#view-calendar>div:first-child>div:first-child{gap:14px}#view-analytics>div:first-child{gap:10px;grid-template-columns:repeat(3,minmax(0,1fr))}#view-analytics>div:first-child>div{padding:14px 10px}#view-analytics>div:first-child p{font-size:10px;letter-spacing:0}#view-analytics>div:first-child h3{font-size:26px}#view-analytics>div:last-child>div:first-child{flex-wrap:wrap;gap:8px}.backup-tools{padding:12px 14px 20px;flex-direction:column;gap:0}.empty-state{padding:32px 16px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 #dashboard-tasks-list>*{margin-top:0!important}#mini-calendar-grid button{border:0;position:relative}#mini-calendar-grid button.border{background:var(--soft);color:var(--accent)}#mini-calendar-grid button.border::after{content:'';position:absolute;bottom:4px;width:3px;height:3px;border-radius:50%;background:currentColor}#global-search,#task-filter,#priority-filter{min-height:44px!important}.text-slate-400,.text-slate-500{color:var(--muted)!important}.dark .text-slate-400,.dark .text-slate-500{color:var(--muted)!important}
 .text-emerald-500{color:#23765b!important}.text-amber-500{color:#895c0d!important}.text-brand-500{color:#5750ce!important}.dark .text-emerald-500{color:#8bdcbd!important}.dark .text-amber-500{color:#f1cd88!important}.dark .text-brand-500{color:#b9b4ff!important}
 @media(max-width:639px){.month-cell{height:70px!important;padding:7px!important}.month-cell>div:first-child{flex-direction:column;align-items:flex-start;gap:6px}.month-cell>div:last-child{display:none}.month-cell>div:first-child>span:last-child:not(:first-child){padding:1px 3px;font-size:9px}.month-blank{height:70px!important}}
+</style><style>
+.language-picker{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:12px;font-size:12px;padding:8px 10px;min-height:44px;max-width:160px}aside>.language-picker{margin-top:auto;margin-bottom:16px;width:100%;max-width:none}header .language-picker{width:72px;padding:8px 4px}#header-title{overflow-wrap:normal}html[lang=ru] #dashboard-greeting{font-size:25px}html[lang=ru] #view-analytics>div:first-child p{letter-spacing:0}html[lang=ru] #task-form label{letter-spacing:.02em}@media(max-width:639px){html[lang=ru] #view-analytics>div:first-child{grid-template-columns:1fr}html[lang=ru] #view-analytics>div:first-child>div{display:grid;grid-template-columns:1fr auto;gap:4px;padding:14px 16px}html[lang=ru] #view-analytics>div:first-child h3{grid-column:2;grid-row:1 / 3}html[lang=ru] #view-analytics>div:first-child p{font-size:12px}#header-title{font-size:21px}header>.flex:first-child>div:first-child{gap:8px}#task-modal label{font-size:10px}#task-form>div:last-child button{padding-left:10px;padding-right:10px}}
 </style></head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-300 antialiased pb-20 lg:pb-0">
 
@@ -140,7 +142,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                 </div>
             </div>
 
-            <!-- Bottom Actions: Theme Toggle & New Task -->
+            <!-- Bottom Actions: Theme Toggle & New Task --><select class="language-picker" aria-label="Dil" onchange="setLanguage(this.value)"><option value="az" lang="az">AZ · Azərbaycan</option><option value="ru" lang="ru">RU · Русский</option></select>
             <div class="pt-6 border-t border-slate-100 dark:border-slate-700 flex flex-col gap-3">
                 <button onclick="openTaskModal()" class="w-full flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-medium py-3 px-4 rounded-xl shadow-lg shadow-brand-600/25 transition-all duration-200 active:scale-95 min-h-[44px]">
                     <i data-lucide="plus" class="w-5 h-5"></i>
@@ -176,7 +178,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                         </div>
                     </div>
                     
-                    <div class="flex items-center gap-2 lg:hidden">
+                    <div class="flex items-center gap-2 lg:hidden"><select class="language-picker" aria-label="Dil" title="Azərbaycan / Русский" onchange="setLanguage(this.value)"><option value="az" lang="az">AZ</option><option value="ru" lang="ru">RU</option></select>
                         <button onclick="toggleDarkMode()" aria-label="Toggle Theme" class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center">
                             <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
                             <i data-lucide="sun" class="w-4 h-4 hidden dark:block"></i>
@@ -278,7 +280,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                                         </button>
                                     </div>
                                 </div>
-                                <div class="grid grid-cols-7 gap-1 text-center text-xs font-medium text-slate-400 mb-2">
+                                <div id="mini-weekdays" class="grid grid-cols-7 gap-1 text-center text-xs font-medium text-slate-400 mb-2">
                                     <span>B.e.</span><span>Ç.a.</span><span>Ç.</span><span>C.a.</span><span>C.</span><span>Ş.</span><span>B.</span>
                                 </div>
                                 <div id="mini-calendar-grid" class="grid grid-cols-7 gap-1 text-center text-xs">
@@ -405,7 +407,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                 </button>
             </div>
 
-            <p id="form-error" role="alert" hidden></p><form id="task-form" onsubmit="handleTaskFormSubmit(event)" class="space-y-4">
+            <p id="form-error" role="alert" hidden></p><form novalidate id="task-form" onsubmit="handleTaskFormSubmit(event)" class="space-y-4">
                 <input type="hidden" id="task-id-input">
                 
                 <div class="space-y-1.5">
@@ -491,6 +493,45 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
 
     <!-- JavaScript Application Logic -->
     <script>
+const RU={"Gününüzə yer açın": "Освободите время для важного", "Əsas məzmuna keç": "Перейти к основному содержимому", "Bu gün": "Сегодня", "Təqvim": "Календарь", "Statistika": "Статистика", "Bu günün icmalı": "Обзор дня", "Yeni Tapşırıq": "Новая задача", "Tünd görünüş": "Тёмная тема", "Açıq görünüş": "Светлая тема", "Bütün tapşırıqlarda axtarış": "Поиск по всем задачам", "Bütün tapşırıqlarda axtar…": "Поиск по всем задачам…", "Xoş gəldiniz!": "Добро пожаловать!", "Sabahınız xeyir! ☀️": "Доброе утро! ☀️", "Günortanız xeyir! 🌤️": "Добрый день! 🌤️", "Axşamınız xeyir! 🌙": "Добрый вечер! 🌙", "Bir az plan. Daha çox rahatlıq.": "Немного планирования. Больше спокойствия.", "Günün ritmi": "Прогресс за день", "Vaxtı keçmiş tapşırıqlar var": "Есть просроченные задачи", "Keçmiş tarixlərdən tamamlanmamış tapşırıqlarınızı bu günə keçirə bilərsiniz.": "Перенесите незавершённые разовые задачи на сегодня.", "Bu günə keçir": "Перенести на сегодня", "Günün Tapşırıqları": "Задачи на день", "Günün tapşırıqları": "Задачи на день", "Status üzrə süzgəc": "Фильтр по статусу", "Bütün statuslar": "Все статусы", "Tamamlanmamış": "Незавершённые", "Tamamlanmış": "Завершённые", "Prioritet üzrə süzgəc": "Фильтр по приоритету", "Bütün prioritetlər": "Все приоритеты", "Yüksək (High)": "Высокий", "Orta (Medium)": "Средний", "Aşağı (Low)": "Низкий", "Yüksək": "Высокий", "Orta": "Средний", "Aşağı": "Низкий", "Növbəti Tapşırıq": "Следующая задача", "Növbəti tapşırıq yoxdur.": "Предстоящих задач нет.", "Aylıq Təqvim": "Календарь на месяц", "Həftəlik Təqvim": "Календарь на неделю", "Gündəlik Təqvim": "Календарь на день", "Ay": "Месяц", "Həftə": "Неделя", "Gün": "День", "Ümumi Tamamlanan": "Всего выполнено", "Bütün zamanlar üzrə": "За всё время", "Məhsuldarlıq Reytinqi": "Выполнение задач", "Son 7 gün üzrə tamamlama": "Доля выполненных за 7 дней", "Aktiv Tapşırıqlar": "Активные задачи", "Bu gün icra gözləyən": "Осталось на сегодня", "Həftəlik Məhsuldarlıq Analizi": "Продуктивность за неделю", "Son 7 gün": "Последние 7 дней", "Yeni Tapşırıq Əlavə Et": "Новая задача", "Tapşırığı redaktə et": "Редактирование задачи", "Tapşırıq Adı": "Название задачи", "Məsələn: Layihə təqdimatını hazırlamaq": "Например: подготовить презентацию", "Açıqlama (İstəyə bağlı)": "Описание (необязательно)", "Detallar və ya qeydlər...": "Подробности или заметки…", "Tarix": "Дата", "Saat": "Время", "Prioritet": "Приоритет", "Təkrar": "Повторение", "Təkrar yoxdur": "Не повторять", "Hər gün": "Каждый день", "Hər həftə": "Каждую неделю", "Ləğv et": "Отмена", "Yadda saxla": "Сохранить", "Bağla": "Закрыть", "Bu tarixə tapşırıq əlavə et": "Добавить задачу на этот день", "Saxlanmış məlumat oxuna bilmir. Orijinal yaddaş dəyişdirilməyib. Ehtiyat nüsxəni endirin və məlumatı yoxlayın.": "Не удалось прочитать сохранённые данные. Исходные данные не изменены. Скачайте резервную копию и проверьте её содержимое.", "Yaddaş oxuna bilmir. Orijinal məlumat qorunub; dəyişikliklər saxlanmadı.": "Хранилище недоступно. Исходные данные сохранены, изменения не записаны.", "Dəyişiklik saxlanmadı. Brauzer yaddaşı dolu və ya bağlıdır. Əvvəlki məlumatlar saxlanılıb.": "Не удалось сохранить изменения. Хранилище браузера заполнено или недоступно. Прежние данные сохранены.", "İstənilən vaxt": "В любое время", "tamamlanma": "отметить выполнение", "Redaktə et": "Редактировать", "Sil": "Удалить", "Ehtiyat nüsxə bərpa edildi": "Резервная копия восстановлена", "Bərpa edilmədi. Faylın formatını və brauzer yaddaşını yoxlayın.": "Восстановление не выполнено. Проверьте формат файла и доступность хранилища браузера.", "Məlumatlar bu brauzerdə saxlanır.": "Данные сохраняются в этом браузере.", "Ehtiyat nüsxə": "Резервная копия", "Bərpa et": "Восстановить", "Başqa pəncərədəki dəyişikliklər yükləndi": "Изменения из другого окна загружены", "Görünüş yalnız bu sessiya üçün dəyişdi.": "Тема изменена только для текущего сеанса.", "Tapşırıq tamamlandı!": "Задача выполнена!", "Tapşırıq yenidən aktivdir": "Задача снова активна", "Bu gün sərbəstdir": "На этот день задач нет", "İlk tapşırığı aşağıdakı düymə ilə əlavə edin.": "Добавьте первую задачу с помощью кнопки ниже.", "Tapşırıq adı və düzgün tarix daxil edin.": "Введите название задачи и корректную дату.", "Yadda saxlamaq mümkün olmadı. Məlumatları bu pəncərədən kopyalaya bilərsiniz.": "Не удалось сохранить. Вы можете скопировать введённые данные из этого окна.", "Tapşırıq yeniləndi": "Задача обновлена", "Tapşırıq əlavə olundu": "Задача добавлена", "Tapşırıq silindi. ": "Задача удалена. ", "Geri qaytar": "Отменить удаление", "Gününüz hələ boşdur. İlk planınızı əlavə edin.": "На сегодня пока нет задач. Добавьте первую.", "Uyğun tapşırıq tapılmadı": "Ничего не найдено", "Başqa söz sınayın və ya süzgəcləri sıfırlayın.": "Попробуйте другой запрос или сбросьте фильтры.", "Böyük planlar kiçik bir addımla başlayır.": "Большие планы начинаются с маленького шага.", "Süzgəcləri sıfırla": "Сбросить фильтры", "İlk tapşırığı əlavə et": "Добавить первую задачу", "Saat ": "Время: ", "Vaxt təyin edilməyib": "Время не указано", "Bu günün bütün tapşırıqları tamamlandı.": "Все задачи на сегодня выполнены.", "İlk tapşırığınız burada görünəcək.": "Здесь появится ваша первая задача.", "Vaxtı keçmiş tapşırıqlar bu günə keçirildi!": "Просроченные задачи перенесены на сегодня!", "Tapşırıq yoxdur": "Нет задач", "Bu gün üçün plan yoxdur": "На этот день планов нет", "Özünüzə vaxt ayırın və ya yeni tapşırıq əlavə edin.": "Уделите время себе или добавьте новую задачу.", "Tapşırıq əlavə et": "Добавить задачу", "Əlavə et": "Добавить", "Toggle Theme": "Переключить тему", "Previous Month": "Предыдущий месяц", "Next Month": "Следующий месяц", "Previous": "Предыдущий период", "Next": "Следующий период", "Add Task": "Добавить задачу", "Close": "Закрыть", "Axtarış nəticələri": "Результаты поиска", "tamamlandı": "выполнено", "daha": "ещё", "Dil": "Язык", "Dil seçimi yalnız bu sessiya üçün dəyişdi.": "Язык изменён только для текущего сеанса."};
+const AZ={"Toggle Theme": "Görünüşü dəyiş", "Previous Month": "Əvvəlki ay", "Next Month": "Növbəti ay", "Previous": "Əvvəlki dövr", "Next": "Növbəti dövr", "Add Task": "Tapşırıq əlavə et", "Close": "Bağla", "Yüksək (High)": "Yüksək", "Orta (Medium)": "Orta", "Aşağı (Low)": "Aşağı"};
+        let language = (()=>{try{return localStorage.getItem('planifyr_language')==='ru'?'ru':'az'}catch(e){return 'az'}})();
+        const uiBindings=[];
+        function tr(key){return language==='ru'?(RU[key]??key):(AZ[key]??key)}
+        const monthAz=['Yanvar','Fevral','Mart','Aprel','May','İyun','İyul','Avqust','Sentyabr','Oktyabr','Noyabr','Dekabr'];
+        const monthRu=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+        const monthRuDate=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+        function weekdayLabels(){return language==='ru'?['Пн','Вт','Ср','Чт','Пт','Сб','Вс']:['B.e.','Ç.a.','Ç.','C.a.','C.','Ş.','B.']}
+        function weekdayLabel(day){return weekdayLabels()[(day+6)%7]}
+        function taskCount(n){if(language==='az')return `${n} tapşırıq`;return `${n} ${{one:'задача',few:'задачи',many:'задач',other:'задачи'}[new Intl.PluralRules('ru').select(n)]}`}
+        // Bind only application-owned static text before tasks are rendered. Never translate user content.
+        function bindUI(root){
+            const walk=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+            while(walk.nextNode()){
+                const node=walk.currentNode;if(node.parentElement.closest('script,style'))continue;
+                const key=node.textContent.trim();if(Object.hasOwn(RU,key))uiBindings.push({node,key});
+            }
+            root.querySelectorAll('[aria-label],[placeholder]').forEach(el=>['aria-label','placeholder'].forEach(attr=>{const key=el.getAttribute(attr);if(Object.hasOwn(RU,key))uiBindings.push({node:el,attr,key})}));
+        }
+        function applyLanguage(){
+            document.documentElement.lang=language;
+            document.title='Planifyr — '+tr('Gününüzə yer açın');
+            uiBindings.forEach(({node,attr,key})=>{if(!node.isConnected)return;if(attr)node.setAttribute(attr,tr(key));else node.textContent=tr(key)});
+            document.querySelectorAll('.language-picker').forEach(el=>{el.value=language;el.setAttribute('aria-label',tr('Dil'))});
+            document.getElementById('mini-weekdays').innerHTML=weekdayLabels().map(d=>`<span>${d}</span>`).join('');
+        }
+        function setLanguage(value){
+            if(!['az','ru'].includes(value))return;
+            language=value;
+            let saved=true;try{localStorage.setItem('planifyr_language',value)}catch(e){saved=false}
+            applyLanguage();updateHeaderDate();switchView(currentView);
+            // Preserve open form values and the current calendar period.
+            document.getElementById('modal-title-text').textContent=tr(document.getElementById('task-id-input').value?'Tapşırığı redaktə et':'Yeni Tapşırıq Əlavə Et');
+            document.querySelectorAll('[data-message-key]').forEach(el=>el.textContent=tr(el.dataset.messageKey));
+            if(!saved)showToast(tr('Dil seçimi yalnız bu sessiya üçün dəyişdi.'),'info');
+        }
+
+function messageKey(text){return Object.keys(RU).find(k=>RU[k]===text)||text}
         // Compatibility: keep smart_planner_tasks, theme, ids, unknown fields and completions.
         let storageBlocked=false, persistedTasks='[]', storageProblem='';
         function validDate(value) {
@@ -512,18 +553,18 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                 const data=raw===null?[]:JSON.parse(raw);
                 if(!validateTasks(data)) throw Error('Invalid data');
                 persistedTasks=JSON.stringify(data);return data;
-            } catch(e) {storageBlocked=true;storageProblem='Saxlanmış məlumat oxuna bilmir. Orijinal yaddaş dəyişdirilməyib. Ehtiyat nüsxəni endirin və məlumatı yoxlayın.';return [];}
+            } catch(e) {storageBlocked=true;storageProblem=tr("Saxlanmış məlumat oxuna bilmir. Orijinal yaddaş dəyişdirilməyib. Ehtiyat nüsxəni endirin və məlumatı yoxlayın.");return [];}
         }
-        function storageWarning(message) { const el=document.getElementById('storage-warning');el.hidden=false;el.textContent=message; }
+        function storageWarning(message) { const el=document.getElementById('storage-warning');el.hidden=false;el.dataset.messageKey=messageKey(message);el.textContent=message; }
         function readTheme(){try{return localStorage.getItem('theme')}catch(e){return null}}
         function sortTasks(items,date){return [...items].sort((a,b)=>Number(isTaskCompletedOnDate(a,date))-Number(isTaskCompletedOnDate(b,date))||(a.time||'99:99').localeCompare(b.time||'99:99')||({High:0,Medium:1,Low:2}[a.priority]??1)-({High:0,Medium:1,Low:2}[b.priority]??1));}
         function taskCard(t,date,showDate=false){
             const done=isTaskCompletedOnDate(t,date), id=escapeHtml(t.id), label=escapeHtml(t.title);
-            const priority={High:'Yüksək',Medium:'Orta',Low:'Aşağı'}[t.priority]||'Orta';
+            const priority={High:tr("Yüksək"),Medium:tr("Orta"),Low:tr("Aşağı")}[t.priority]||tr("Orta");
             return `<article class="task-card ${done?'is-complete':''}">
-                <button class="task-check" data-action="complete" data-task="${id}" data-date="${date}" aria-label="${label}: tamamlanma" aria-pressed="${done}"><span>${done?'<i data-lucide="check"></i>':''}</span></button>
-                <button class="task-body" data-action="edit" data-task="${id}" aria-label="Redaktə et: ${label}"><span class="task-title">${label}</span>${t.description?`<span class="task-description">${escapeHtml(t.description)}</span>`:''}<span class="task-meta">${showDate?`<span>${formatDateString(date)}</span>`:''}${t.time?`<span>${escapeHtml(t.time)}</span>`:'<span>İstənilən vaxt</span>'}<span class="priority priority-${t.priority||'Medium'}">${priority}</span>${t.recurring&&t.recurring!=='none'?`<span>↻ ${t.recurring==='daily'?'Hər gün':'Hər həftə'}</span>`:''}</span></button>
-                <button class="task-delete" data-action="delete" data-task="${id}" aria-label="Sil: ${label}"><i data-lucide="trash-2"></i></button>
+                <button class="task-check" data-action="complete" data-task="${id}" data-date="${date}" aria-label="${label}: ${tr("tamamlanma")}" aria-pressed="${done}"><span>${done?'<i data-lucide="check"></i>':''}</span></button>
+                <button class="task-body" data-action="edit" data-task="${id}" aria-label="${tr("Redaktə et")}: ${label}"><span class="task-title">${label}</span>${t.description?`<span class="task-description">${escapeHtml(t.description)}</span>`:''}<span class="task-meta">${showDate?`<span>${formatDateString(date)}</span>`:''}${t.time?`<span>${escapeHtml(t.time)}</span>`:`<span>${tr("İstənilən vaxt")}</span>`}<span class="priority priority-${t.priority||'Medium'}">${priority}</span>${t.recurring&&t.recurring!=='none'?`<span>↻ ${t.recurring==='daily'?tr("Hər gün"):tr("Hər həftə")}</span>`:''}</span></button>
+                <button class="task-delete" data-action="delete" data-task="${id}" aria-label="${tr("Sil")}: ${label}"><i data-lucide="trash-2"></i></button>
             </article>`;
         }
         function emptyState(title,detail,action,label){return `<div class="empty-state"><div class="empty-icon"><i data-lucide="sunrise"></i></div><h4>${title}</h4><p>${detail}</p><button class="primary-button" onclick="${escapeHtml(action)}">${label}</button></div>`;}
@@ -536,13 +577,13 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             if(!file)return;
             try {
                 const incoming=JSON.parse(await file.text());if(!validateTasks(incoming))throw Error();
-                if(!confirm(`${incoming.length} tapşırıq bərpa ediləcək. Mövcud siyahı əvəzlənəcək. Davam edilsin?`))return;
+                if(!confirm((language==='ru'?`Будет восстановлено: ${taskCount(incoming.length)}. Текущий список будет заменён. Продолжить?`:`${incoming.length} tapşırıq bərpa ediləcək. Mövcud siyahı əvəzlənəcək. Davam edilsin?`)))return;
                 // Keep a recoverable snapshot before replacing a valid or invalid stored value.
                 const previous=localStorage.getItem('smart_planner_tasks');
                 if(previous!==null)localStorage.setItem('smart_planner_tasks_before_import',previous);
                 localStorage.setItem('smart_planner_tasks',JSON.stringify(incoming));
-                tasks=incoming;persistedTasks=JSON.stringify(tasks);storageBlocked=false;document.getElementById('storage-warning').hidden=true;renderAll();showToast('Ehtiyat nüsxə bərpa edildi');
-            }catch(e){showToast('Bərpa edilmədi. Faylın formatını və brauzer yaddaşını yoxlayın.','info');}
+                tasks=incoming;persistedTasks=JSON.stringify(tasks);storageBlocked=false;document.getElementById('storage-warning').hidden=true;renderAll();showToast(tr("Ehtiyat nüsxə bərpa edildi"));
+            }catch(e){showToast(tr("Bərpa edilmədi. Faylın formatını və brauzer yaddaşını yoxlayın."),'info');}
         }
         function initEnhancements(){
             if(storageProblem)storageWarning(storageProblem);
@@ -550,7 +591,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             document.getElementById('nav-dashboard').setAttribute('aria-current','page');
             const backup=document.createElement('div');backup.className='backup-tools';
             backup.innerHTML='<span>Məlumatlar bu brauzerdə saxlanır.</span><div><button onclick="exportBackup()">Ehtiyat nüsxə</button><button onclick="document.getElementById(\'backup-input\').click()">Bərpa et</button><input type="file" id="backup-input" accept="application/json,.json" hidden></div>';
-            document.querySelector('main').append(backup);
+            document.querySelector('main').append(backup);bindUI(backup);applyLanguage();
             document.getElementById('backup-input').onchange=e=>{importBackup(e.target.files[0]);e.target.value=''};
             document.addEventListener('click',e=>{
                 const b=e.target.closest('[data-action]');if(!b)return;
@@ -585,44 +626,11 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             let lastDate=getTodayString();
             function refreshDate(){if(lastDate!==getTodayString()){lastDate=getTodayString();updateHeaderDate();renderAll();}}
             document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshDate()});setInterval(refreshDate,60000);
-            window.addEventListener('storage',e=>{if(e.key==='smart_planner_tasks'){storageBlocked=false;storageProblem='';tasks=loadTasks();if(storageProblem)storageWarning(storageProblem);renderAll();showToast('Başqa pəncərədəki dəyişikliklər yükləndi','info');}});
+            window.addEventListener('storage',e=>{if(e.key==='smart_planner_tasks'){storageBlocked=false;storageProblem='';tasks=loadTasks();if(storageProblem)storageWarning(storageProblem);renderAll();showToast(tr("Başqa pəncərədəki dəyişikliklər yükləndi"),'info');}});
         }
 
         // --- State Management ---
         let tasks = loadTasks();
-        /* Original demo examples are retained as reference, never injected into personal data. */
-        const demoTasks = [
-            {
-                id: 'task-1',
-                title: 'Həftəlik strategiya iclası',
-                description: 'Komanda ilə qlobal hədəflərin müzakirəsi və bölgü.',
-                date: getTodayString(),
-                time: '10:00',
-                priority: 'High',
-                recurring: 'weekly',
-                completions: {}
-            },
-            {
-                id: 'task-2',
-                title: 'Kod bazasını nəzərdən keçirmək',
-                description: 'Pull requestlərin yoxlanılması və optimizasiya.',
-                date: getTodayString(),
-                time: '14:30',
-                priority: 'Medium',
-                recurring: 'none',
-                completions: {}
-            },
-            {
-                id: 'task-3',
-                title: 'İdman məşqi (30 dəqiqə)',
-                description: 'Kardio və yüngül fitnes hərəkətləri.',
-                date: getTodayString(),
-                time: '18:00',
-                priority: 'Low',
-                recurring: 'daily',
-                completions: {}
-            }
-        ];
 
         let currentView = 'dashboard';
         let calendarMode = 'month';
@@ -641,7 +649,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
 
         function formatDateString(dateStr) {
             const [y,m,d]=dateStr.split('-').map(Number);
-            return `${d} ${['yanvar','fevral','mart','aprel','may','iyun','iyul','avqust','sentyabr','oktyabr','noyabr','dekabr'][m-1]} ${y}`;
+            return `${d} ${(language==='ru'?monthRuDate:monthAz.map(m=>m.toLocaleLowerCase('az')))[m-1]} ${y}`;
         }
 
         function escapeHtml(str) {
@@ -655,9 +663,9 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
         }
 
         function saveData() {
-            if (storageBlocked) { tasks=JSON.parse(persistedTasks); storageWarning('Yaddaş oxuna bilmir. Orijinal məlumat qorunub; dəyişikliklər saxlanmadı.'); return false; }
+            if (storageBlocked) { tasks=JSON.parse(persistedTasks); storageWarning(tr("Yaddaş oxuna bilmir. Orijinal məlumat qorunub; dəyişikliklər saxlanmadı.")); return false; }
             try { localStorage.setItem('smart_planner_tasks', JSON.stringify(tasks)); persistedTasks = JSON.stringify(tasks); return true; }
-            catch(e) { tasks = JSON.parse(persistedTasks); storageWarning('Dəyişiklik saxlanmadı. Brauzer yaddaşı dolu və ya bağlıdır. Əvvəlki məlumatlar saxlanılıb.'); renderAll(); return false; }
+            catch(e) { tasks = JSON.parse(persistedTasks); storageWarning(tr("Dəyişiklik saxlanmadı. Brauzer yaddaşı dolu və ya bağlıdır. Əvvəlki məlumatlar saxlanılıb.")); renderAll(); return false; }
         }
 
         function showToast(message, type = 'success') {
@@ -670,7 +678,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                     ? 'bg-emerald-50 dark:bg-emerald-950 border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200' 
                     : 'bg-slate-800 text-white border-slate-700'
             }`;
-            toast.innerHTML = `<i data-lucide="${type === 'success' ? 'check-circle-2' : 'info'}" class="w-4 h-4 shrink-0"></i><span>${message}</span>`;
+            toast.innerHTML = `<i data-lucide="${type === 'success' ? 'check-circle-2' : 'info'}" class="w-4 h-4 shrink-0"></i><span data-message-key="${escapeHtml(messageKey(message))}">${escapeHtml(message)}</span>`;
             container.appendChild(toast);
             if (window.lucide) lucide.createIcons();
 
@@ -687,7 +695,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
         // --- Theme Toggle ---
         function toggleDarkMode() {
             const dark = document.documentElement.classList.toggle('dark');
-            try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch(e) { showToast('Görünüş yalnız bu sessiya üçün dəyişdi.', 'info'); }
+            try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch(e) { showToast(tr("Görünüş yalnız bu sessiya üçün dəyişdi."), 'info'); }
         }
 
         function switchView(view) {
@@ -710,9 +718,9 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             });
 
             const titles = {
-                dashboard: 'Bu gün',
-                calendar: 'Təqvim',
-                analytics: 'Statistika'
+                dashboard: tr("Bu gün"),
+                calendar: tr("Təqvim"),
+                analytics: tr("Statistika")
             };
             const titleEl = document.getElementById('header-title');
             if (titleEl) titleEl.innerText = titles[view];
@@ -725,10 +733,10 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             if (dateBadge) dateBadge.innerText = formatDateString(todayStr);
             
             const hours = new Date().getHours();
-            let greeting = 'Xoş gəldiniz!';
-            if (hours < 12) greeting = 'Sabahınız xeyir! ☀️';
-            else if (hours < 18) greeting = 'Günortanız xeyir! 🌤️';
-            else greeting = 'Axşamınız xeyir! 🌙';
+            let greeting = tr("Xoş gəldiniz!");
+            if (hours < 12) greeting = tr("Sabahınız xeyir! ☀️");
+            else if (hours < 18) greeting = tr("Günortanız xeyir! 🌤️");
+            else greeting = tr("Axşamınız xeyir! 🌙");
             
             const greetingEl = document.getElementById('dashboard-greeting');
             if (greetingEl) greetingEl.innerText = greeting;
@@ -770,7 +778,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             task.completions[dateStr] = complete;
             if (!saveData()) return;
             renderAll();
-            showToast(complete ? 'Tapşırıq tamamlandı!' : 'Tapşırıq yenidən aktivdir');
+            showToast(complete ? tr("Tapşırıq tamamlandı!") : tr("Tapşırıq yenidən aktivdir"));
         }
 
         function openTaskModal() {
@@ -780,7 +788,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             const dateInput = document.getElementById('task-date-input');
             const modal = document.getElementById('task-modal');
 
-            if (modalTitle) modalTitle.innerText = 'Yeni Tapşırıq Əlavə Et';
+            if (modalTitle) modalTitle.innerText = tr("Yeni Tapşırıq Əlavə Et");
             if (form) form.reset();
             document.getElementById('form-error').hidden=true;
             if (idInput) idInput.value = '';
@@ -801,7 +809,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
 
             closeDayModal();
             document.getElementById('form-error').hidden=true;
-            document.getElementById('modal-title-text').innerText = 'Tapşırığı redaktə et';
+            document.getElementById('modal-title-text').innerText = tr("Tapşırığı redaktə et");
             document.getElementById('task-id-input').value = task.id;
             document.getElementById('task-title-input').value = task.title;
             document.getElementById('task-desc-input').value = task.description || '';
@@ -823,7 +831,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             currentSelectedDayDate=dateStr;
             document.getElementById('day-modal-subtitle').textContent=formatDateString(dateStr);
             const items=tasks.filter(t=>isTaskScheduledForDate(t,dateStr));
-            document.getElementById('day-modal-tasks-list').innerHTML=items.length ? sortTasks(items,dateStr).map(t=>taskCard(t,dateStr)).join('') : '<div class="empty-state"><h4>Bu gün sərbəstdir</h4><p>İlk tapşırığı aşağıdakı düymə ilə əlavə edin.</p></div>';
+            document.getElementById('day-modal-tasks-list').innerHTML=items.length ? sortTasks(items,dateStr).map(t=>taskCard(t,dateStr)).join('') : `<div class="empty-state"><h4>${tr("Bu gün sərbəstdir")}</h4><p>${tr("İlk tapşırığı aşağıdakı düymə ilə əlavə edin.")}</p></div>`;
             document.getElementById('day-modal').classList.remove('hidden');
             if(window.lucide)lucide.createIcons();
         }
@@ -838,12 +846,12 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             const value = name => document.getElementById('task-' + name + '-input').value;
             const id = value('id'), title = value('title').trim(), date = value('date');
             const error = document.getElementById('form-error');
-            if (!title || !validDate(date)) { error.hidden = false; error.textContent = 'Tapşırıq adı və düzgün tarix daxil edin.'; return; }
+            if (!title || !validDate(date)) { error.hidden = false; error.dataset.messageKey="Tapşırıq adı və düzgün tarix daxil edin."; error.textContent = tr("Tapşırıq adı və düzgün tarix daxil edin."); return; }
             const fields = {title, date, description:value('desc').trim(), time:value('time'), priority:value('priority'), recurring:value('recurring')};
             if (id) { const task = tasks.find(t => t.id === id); if (!task) return; Object.assign(task,fields); }
             else tasks.push({id: 'task-' + (globalThis.crypto?.randomUUID?.() || Date.now() + '-' + Math.random().toString(36).slice(2)), ...fields, completions:{}});
-            if (!saveData()) { error.hidden=false; error.textContent='Yadda saxlamaq mümkün olmadı. Məlumatları bu pəncərədən kopyalaya bilərsiniz.'; return; }
-            closeTaskModal(); renderAll(); showToast(id ? 'Tapşırıq yeniləndi' : 'Tapşırıq əlavə olundu');
+            if (!saveData()) { error.hidden=false; error.dataset.messageKey="Yadda saxlamaq mümkün olmadı. Məlumatları bu pəncərədən kopyalaya bilərsiniz."; error.textContent=tr("Yadda saxlamaq mümkün olmadı. Məlumatları bu pəncərədən kopyalaya bilərsiniz."); return; }
+            closeTaskModal(); renderAll(); showToast(id ? tr("Tapşırıq yeniləndi") : tr("Tapşırıq əlavə olundu"));
         }
 
         function deleteTask(id) {
@@ -853,8 +861,8 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             if (!saveData()) return;
             renderAll();
             const toast = document.createElement('div'); toast.className='undo-toast';
-            toast.append(document.createTextNode('Tapşırıq silindi. '));
-            const undo = document.createElement('button'); undo.textContent='Geri qaytar';
+            const deletedText=document.createElement("span");deletedText.dataset.messageKey="Tapşırıq silindi. ";deletedText.textContent=tr("Tapşırıq silindi. ");toast.append(deletedText);
+            const undo = document.createElement('button'); undo.dataset.messageKey='Geri qaytar'; undo.textContent=tr("Geri qaytar");
             undo.onclick = () => { if (!tasks.some(t=>t.id===id)) tasks.splice(Math.min(index,tasks.length),0,item); if(saveData()){renderAll();toast.remove();} };
             toast.append(undo); document.getElementById('toast-container').append(toast);
             setTimeout(()=>toast.remove(),15000);
@@ -885,7 +893,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             const countsText = document.getElementById('sidebar-counts-text');
             const progressBar = document.getElementById('sidebar-progress-bar');
 
-            if (progressText) progressText.innerText = `${percent}% tamamlandı`;
+            if (progressText) progressText.innerText = `${percent}% ${tr("tamamlandı")}`;
             if (countsText) countsText.innerText = `${completed}/${total}`;
             if (progressBar) progressBar.style.width = `${percent}%`;
         }
@@ -894,7 +902,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             const date = getTodayString(), today = tasks.filter(t => isTaskScheduledForDate(t,date));
             const done = today.filter(t => isTaskCompletedOnDate(t,date)).length;
             document.getElementById('dash-progress-percent').textContent = (today.length ? Math.round(done/today.length*100) : 0)+'%';
-            document.getElementById('daily-summary').textContent = today.length ? `${done} tamamlandı · ${today.length-done} tapşırıq sizi gözləyir` : 'Gününüz hələ boşdur. İlk planınızı əlavə edin.';
+            document.getElementById('daily-summary').textContent = today.length ? (language==='ru'?`Выполнено: ${done} · Осталось: ${today.length-done}`:`${done} tamamlandı · ${today.length-done} tapşırıq sizi gözləyir`) : tr("Gününüz hələ boşdur. İlk planınızı əlavə edin.");
             document.getElementById('overdue-banner').classList.toggle('hidden', !tasks.some(t => (!t.recurring || t.recurring==='none') && t.date<date && !isTaskCompletedOnDate(t,t.date)));
             const status = document.getElementById('task-filter').value, priority = document.getElementById('priority-filter').value;
             const query = searchQuery.trim().toLocaleLowerCase('az');
@@ -903,11 +911,11 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                 const complete = isTaskCompletedOnDate(t, query ? t.date : date);
                 return (status==='all' || (status==='completed')===complete) && (priority==='all'||t.priority===priority) && (!query || (t.title+' '+(t.description||'')).toLocaleLowerCase('az').includes(query));
             });
-            document.getElementById('task-list-heading').textContent = query ? `Axtarış nəticələri · ${filtered.length}` : `Günün tapşırıqları · ${today.length}`;
+            document.getElementById('task-list-heading').textContent = query ? `${tr("Axtarış nəticələri")} · ${filtered.length}` : `${tr("Günün tapşırıqları")} · ${today.length}`;
             const filteredState = !!query || status!=='all'||priority!=='all';
-            document.getElementById('dashboard-tasks-list').innerHTML = filtered.length ? sortTasks(filtered, date).map(t=>taskCard(t,query?t.date:date,!!query)).join('') : emptyState(filteredState ? 'Uyğun tapşırıq tapılmadı' : 'Gününüzə yer açın',filteredState ? 'Başqa söz sınayın və ya süzgəcləri sıfırlayın.' : 'Böyük planlar kiçik bir addımla başlayır.',filteredState ? 'resetFilters()' : 'openTaskModal()',filteredState ? 'Süzgəcləri sıfırla' : 'İlk tapşırığı əlavə et');
+            document.getElementById('dashboard-tasks-list').innerHTML = filtered.length ? sortTasks(filtered, date).map(t=>taskCard(t,query?t.date:date,!!query)).join('') : emptyState(filteredState ? tr("Uyğun tapşırıq tapılmadı") : tr("Gününüzə yer açın"),filteredState ? tr("Başqa söz sınayın və ya süzgəcləri sıfırlayın.") : tr("Böyük planlar kiçik bir addımla başlayır."),filteredState ? 'resetFilters()' : 'openTaskModal()',filteredState ? tr("Süzgəcləri sıfırla") : tr("İlk tapşırığı əlavə et"));
             const active = sortTasks(today.filter(t=>!isTaskCompletedOnDate(t,date)),date), nt=active[0];
-            document.getElementById('next-task-card').innerHTML = nt ? `<p class="next-title">${escapeHtml(nt.title)}</p><p class="muted">${nt.time ? 'Saat '+escapeHtml(nt.time) : 'Vaxt təyin edilməyib'}</p>` : `<p class="muted">${today.length ? 'Bu günün bütün tapşırıqları tamamlandı.' : 'İlk tapşırığınız burada görünəcək.'}</p>`;
+            document.getElementById('next-task-card').innerHTML = nt ? `<p class="next-title">${escapeHtml(nt.title)}</p><p class="muted">${nt.time ? tr("Saat ")+escapeHtml(nt.time) : tr("Vaxt təyin edilməyib")}</p>` : `<p class="muted">${today.length ? tr("Bu günün bütün tapşırıqları tamamlandı.") : tr("İlk tapşırığınız burada görünəcək.")}</p>`;
             if(window.lucide) lucide.createIcons();
         }
 
@@ -922,7 +930,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             });
             if (!saveData()) return;
             renderAll();
-            showToast('Vaxtı keçmiş tapşırıqlar bu günə keçirildi!');
+            showToast(tr("Vaxtı keçmiş tapşırıqlar bu günə keçirildi!"));
         }
 
         function renderMiniCalendar() {
@@ -932,7 +940,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             const year = miniCalendarDate.getFullYear();
             const month = miniCalendarDate.getMonth();
 
-            const monthNames = ['Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'İyun', 'İyul', 'Avqust', 'Sentyabr', 'Oktyabr', 'Noyabr', 'Dekabr'];
+            const monthNames = (language==='ru'?monthRu:monthAz);
             const titleEl = document.getElementById('mini-calendar-month-year');
             if (titleEl) titleEl.innerText = `${monthNames[month]} ${year}`;
 
@@ -1004,13 +1012,13 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             if (!container) return;
 
             if (calendarMode === 'month') {
-                if (titleEl) titleEl.innerText = 'Aylıq Təqvim';
+                if (titleEl) titleEl.innerText = tr("Aylıq Təqvim");
                 renderMonthGrid(container);
             } else if (calendarMode === 'week') {
-                if (titleEl) titleEl.innerText = 'Həftəlik Təqvim';
+                if (titleEl) titleEl.innerText = tr("Həftəlik Təqvim");
                 renderWeekGrid(container);
             } else {
-                if (titleEl) titleEl.innerText = 'Gündəlik Təqvim';
+                if (titleEl) titleEl.innerText = tr("Gündəlik Təqvim");
                 renderDayGrid(container);
             }
             if (window.lucide) lucide.createIcons();
@@ -1019,7 +1027,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
         function renderMonthGrid(container) {
             const year = currentDateObj.getFullYear();
             const month = currentDateObj.getMonth();
-            const monthNames = ['Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'İyun', 'İyul', 'Avqust', 'Sentyabr', 'Oktyabr', 'Noyabr', 'Dekabr'];
+            const monthNames = (language==='ru'?monthRu:monthAz);
             
             const firstDayIndex = new Date(year, month, 1).getDay();
             const adjustedFirstDay = firstDayIndex === 0 ? 6 : firstDayIndex - 1;
@@ -1029,7 +1037,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
             let html = `
                 <div class="text-center font-bold text-sm sm:text-base mb-3 sm:mb-4">${monthNames[month]} ${year}</div>
                 <div class="grid grid-cols-7 gap-1 sm:gap-2 text-center text-[11px] sm:text-xs font-semibold text-slate-400 mb-2">
-                    <span>B.E</span><span>Ç.A</span><span>Ç.</span><span>C.A</span><span>C.</span><span>Ş.</span><span>B.</span>
+                    ${weekdayLabels().map(d=>`<span>${d}</span>`).join('')}
                 </div>
                 <div class="grid grid-cols-7 gap-1 sm:gap-2">
             `;
@@ -1045,7 +1053,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                 const completedCount = dayTasks.filter(t => isTaskCompletedOnDate(t, dateStr)).length;
 
                 html += `
-                    <div role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" aria-label="${formatDateString(dateStr)}, ${dayTasks.length} tapşırıq" onclick="openDayModalByDate('${dateStr}')" class="month-cell h-20 sm:h-28 rounded-xl sm:rounded-2xl border border-slate-200 dark:border-slate-700 p-1.5 sm:p-2.5 flex flex-col justify-between cursor-pointer hover:border-brand-500 transition-all ${isToday ? 'bg-brand-50/50 dark:bg-brand-950/20 border-brand-500' : 'bg-white dark:bg-slate-800'}">
+                    <div role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" aria-label="${formatDateString(dateStr)}, ${taskCount(dayTasks.length)}" onclick="openDayModalByDate('${dateStr}')" class="month-cell h-20 sm:h-28 rounded-xl sm:rounded-2xl border border-slate-200 dark:border-slate-700 p-1.5 sm:p-2.5 flex flex-col justify-between cursor-pointer hover:border-brand-500 transition-all ${isToday ? 'bg-brand-50/50 dark:bg-brand-950/20 border-brand-500' : 'bg-white dark:bg-slate-800'}">
                         <div class="flex justify-between items-center">
                             <span class="text-[11px] sm:text-xs font-bold ${isToday ? 'bg-brand-600 text-white w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center' : ''}">${day}</span>
                             ${dayTasks.length > 0 ? `<span class="text-[9px] sm:text-[10px] font-medium px-1 sm:px-1.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-500">${completedCount}/${dayTasks.length}</span>` : ''}
@@ -1056,7 +1064,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                                     ${escapeHtml(t.title)}
                                 </div>
                             `).join('')}
-                            ${dayTasks.length > 2 ? `<div class="text-[8px] sm:text-[9px] text-slate-400 pl-0.5">+${dayTasks.length - 2} daha</div>` : ''}
+                            ${dayTasks.length > 2 ? `<div class="text-[8px] sm:text-[9px] text-slate-400 pl-0.5">${language==='ru'?'Ещё':'+'} ${dayTasks.length - 2}${language==='az'?' daha':''}</div>` : ''}
                         </div>
                     </div>
                 `;
@@ -1084,10 +1092,10 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                 const dateStr = getTodayString(d);
                 const isToday = dateStr === todayStr;
                 const dayTasks = tasks.filter(t => isTaskScheduledForDate(t, dateStr));
-                const dayName = ['Bazar','B.e.','Ç.a.','Çərşənbə','C.a.','Cümə','Şənbə'][d.getDay()];
+                const dayName = weekdayLabel(d.getDay());
 
                 html += `
-                    <div role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" aria-label="${formatDateString(dateStr)}, ${dayTasks.length} tapşırıq" onclick="openDayModalByDate('${dateStr}')" class="p-3 rounded-2xl border ${isToday ? 'border-brand-500 bg-brand-50/30 dark:bg-brand-950/20' : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800'} space-y-2 cursor-pointer hover:border-brand-500 transition-all">
+                    <div role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" aria-label="${formatDateString(dateStr)}, ${taskCount(dayTasks.length)}" onclick="openDayModalByDate('${dateStr}')" class="p-3 rounded-2xl border ${isToday ? 'border-brand-500 bg-brand-50/30 dark:bg-brand-950/20' : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800'} space-y-2 cursor-pointer hover:border-brand-500 transition-all">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-semibold uppercase text-slate-400">${dayName}</span>
                             <span class="text-xs font-bold ${isToday ? 'text-brand-600 dark:text-brand-400' : ''}">${d.getDate()}</span>
@@ -1098,7 +1106,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                                     ${escapeHtml(t.title)}
                                 </div>
                             `).join('')}
-                            ${dayTasks.length === 0 ? `<p class="text-[10px] text-slate-400 italic">Tapşırıq yoxdur</p>` : ''}
+                            ${dayTasks.length === 0 ? `<p class="text-[10px] text-slate-400 italic">${tr("Tapşırıq yoxdur")}</p>` : ''}
                         </div>
                     </div>
                 `;
@@ -1110,7 +1118,7 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
 
         function renderDayGrid(container) {
             const date = getTodayString(currentDateObj), items=tasks.filter(t=>isTaskScheduledForDate(t,date));
-            container.innerHTML=`<div class="day-agenda"><div class="agenda-heading"><h4>${formatDateString(date)}</h4><button class="subtle-button" onclick="openTaskModalForDate('${date}')">+ Əlavə et</button></div>${items.length ? sortTasks(items,date).map(t=>taskCard(t,date)).join('') : emptyState('Bu gün üçün plan yoxdur','Özünüzə vaxt ayırın və ya yeni tapşırıq əlavə edin.',`openTaskModalForDate('${date}')`,'Tapşırıq əlavə et')}</div>`;
+            container.innerHTML=`<div class="day-agenda"><div class="agenda-heading"><h4>${formatDateString(date)}</h4><button class="subtle-button" onclick="openTaskModalForDate('${date}')">+ ${tr("Əlavə et")}</button></div>${items.length ? sortTasks(items,date).map(t=>taskCard(t,date)).join('') : emptyState(tr("Bu gün üçün plan yoxdur"),tr("Özünüzə vaxt ayırın və ya yeni tapşırıq əlavə edin."),`openTaskModalForDate('${date}')`,tr("Tapşırıq əlavə et"))}</div>`;
         }
 
         function renderAnalyticsView() {
@@ -1152,10 +1160,10 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                     const dayTasks = tasks.filter(t => isTaskScheduledForDate(t, dStr));
                     const completed = dayTasks.filter(t => isTaskCompletedOnDate(t, dStr)).length;
                     const pct = dayTasks.length > 0 ? Math.round((completed / dayTasks.length) * 100) : 0;
-                    const dayLabel = ['B.','B.e.','Ç.a.','Ç.','C.a.','C.','Ş.'][d.getDay()];
+                    const dayLabel = weekdayLabel(d.getDay());
 
                     return `
-                        <div role="img" aria-label="${formatDateString(dStr)}: ${completed}/${dayTasks.length} tamamlandı, ${pct}%" class="flex flex-col items-center gap-2 h-full justify-end">
+                        <div role="img" aria-label="${formatDateString(dStr)}: ${completed}/${dayTasks.length} ${tr("tamamlandı")}, ${pct}%" class="flex flex-col items-center gap-2 h-full justify-end">
                             <span class="text-[10px] font-semibold text-slate-400">${pct}%</span>
                             <div class="w-full bg-slate-100 dark:bg-slate-700/50 rounded-lg flex flex-col justify-end h-32 overflow-hidden">
                                 <div class="bg-brand-600 w-full rounded-t-lg transition-all duration-500" style="height: ${pct}%;"></div>
@@ -1208,8 +1216,9 @@ main>header{background:var(--surface)!important;border-color:var(--line);padding
                 document.documentElement.classList.remove('dark');
             }
 
+            bindUI(document.body);applyLanguage();
             updateHeaderDate();
-            renderAll();
+            switchView(currentView);
             initTouchGestures();
             initEnhancements();
         };
